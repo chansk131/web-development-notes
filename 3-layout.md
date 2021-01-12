@@ -225,11 +225,21 @@ To get started with flexbox, set the display property on the flex container: `di
 
 ### Flex container properties
 
-`flex-flow` will set up the direction of flexbox and some behaviors. There are two values specified for `flex-flow`. The first is the `flex-direction`. This is typically set to `row` or `column`.
+- `flex-direction` : `row` or `column`, to set up the of the direction of the flexbox
+- `flex-wrap` : `wrap` or `nowrap`, to specifies whether the boxes should wrap to another row/column orn ot
 
-The second value is the `flex-wrap`. This specifies whether the boxes should wrap to another row/column or not. Typical values are `wrap` or `nowrap`.
+or combined into
 
-One other property that might be useful is `justify-content`. Do you want all of the boxes pushed to the beginning of the row (`flex-start`), the end of the row (`flex-end`), centered (`center`), or have any extra space distributed across the row (`space-around`)?
+- `flex-flow: [flex-direction] [flex-wrap]`
+
+e.g. `flex-flow : row nowrap`
+
+- `justify-content`:
+  - `flex-start` : boxes pushed to the beginning of the row
+  - `flex-end` : boxes pushed to the end of the row
+  - `center` : centered
+  - `space-between` : place boxes to fill the available space
+  - `space-around`..etc
 
 ```html
 <style>
@@ -254,43 +264,6 @@ One other property that might be useful is `justify-content`. Do you want all of
   <p class="child-flex2">6</p>
 </div>
 ```
-
-### Flex item properties
-
-By default in flexbox, if you decide to set up a row of boxes, all boxes will have the same width by default. So if you decide to have a row (a flex container) containing 4 children (or flex items), each child will be 25% wide.
-
-If you don't want to use the default width, then assign the `flex-basis` property to the flex item. This number should be a percentage, if you choose to use it.
-
-```html
-<style>
-  div.parent-flex3 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    border: 5px solid #42352c;
-  }
-  p.child-flex3 {
-    flex-basis: 10%;
-    border: 5px solid #c02d28;
-    background-color: #e7e6d2;
-  }
-</style>
-
-<div class="parent-flex3">
-  <p class="child-flex3">1</p>
-  <p class="child-flex3">2</p>
-  <p class="child-flex3">3</p>
-  <p class="child-flex3">4</p>
-  <p class="child-flex3">5</p>
-  <p class="child-flex3">6</p>
-</div>
-```
-
-**Why not `width`?**
-
-The `width` property means to make something a certain width -- period! If it's 25%, it will never be 24.99% or 25.01%.
-
-The `flex-basis` property, however, is more flexible. It says to make the width 25%, but a little more or less than that is OK too.
 
 ## Introducing Grid
 

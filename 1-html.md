@@ -42,8 +42,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
 
 ### Unordered list `<ul></ul>`
 
-Unordered list (often called a "bullet list" - but remember, there's no formatting in HTML!)
-
 Used for lists where the items have no critical order of execution
 
 _Always_ contains `<li>` tags!
@@ -57,20 +55,6 @@ _Always_ contains `<li>` tags!
 ```
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
-
-### List item `<li></li>`
-
-_Always_ nested inside a `<ul>` or `<ol>` tag!
-
-```html
-<ul>
-  <li>Something</li>
-  <li>Another thing</li>
-  <li>Also this one</li>
-</ul>
-```
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
 
 ### Ordered list `<ol></ol>`
 
@@ -120,11 +104,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 
 ### Image `<img>`
 
-Displays an image on your page. Image formats include JPG, GIF, PNG. You may see SVG elements as well. The src (source) attribute is required. Also consider adding an alt attribute.
-
-JPG, GIF, PNG = raster images (a bunch of pixels)
-
-SVG = vector image (a mathematical equation)
+Displays an image on your page.
 
 src = image source (a file path to the image)
 

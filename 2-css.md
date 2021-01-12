@@ -18,7 +18,7 @@ body {
 
 ## Ways to include CSS in your document
 
-**External stylesheet** : attach a separate document in the `<head>` of your HTML.
+**External stylesheet** : attach a separate document in the `<head>` of your HTML. (Most common!)
 
 ```
 <link href="css/styles.css" rel="stylesheet" />
@@ -39,12 +39,6 @@ body {
 ```html
 <p style="color: purple;">I am a purple paragraph!</p>
 ```
-
-## Which should you use?
-
-99.999% of the time: External stylesheet
-
-It is rare that you will need inline or embedded/internal styles, but you should know they are possible.
 
 ## CSS Selectors
 
@@ -380,17 +374,8 @@ Pseudo-classes: specify styling in these states.
 - `:visited` — visited state
 - `:focus` — the currently "focused" (selected) element
 - `:hover` — hover your mouse over this
-- `:active` — the time between the link is selected and the time the page loads. (Not used much today.)
 
-If you are using these pseudo-classes, they MUST go in the order listed.
-
-To remember:
-
-**L**ord **V**ader **F**ormer **H**andle **A**nakin
-
-`:link`, `:visited`, `:active` are used almost exclusively on links (the **`A`** tag).
-
-The pseudo-classes `:focus` and `:hover` are used with links and with any other element on the page. `:focus` is especially useful with forms and in accessibility contexts.
+`:link`, `:visited` are used almost exclusively on links (the **`A`** tag).
 
 ```html
 <style>
@@ -406,9 +391,6 @@ The pseudo-classes `:focus` and `:hover` are used with links and with any other 
   a.example:hover {
     color: purple;
     font-weight: bold;
-  }
-  a.example:active {
-    color: #7c8e88;
   }
 </style>
 
