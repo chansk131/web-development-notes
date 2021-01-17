@@ -1,0 +1,62 @@
+.resume {
+  background-color: #e6dacd;
+}
+
+.resume main {
+  margin-top: 250px;
+  max-width: 724px;
+  width: 80%;
+  margin: 250px auto 0 auto;
+}
+
+.resume-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-title-square {
+  width: 20px;
+  height: 20px;
+  background-color: #0050ff;
+  margin-right: 5px;
+}
+
+.resume-title-text {
+  text-align: center;
+  margin: 0;
+}
+
+.experience-card {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 5px 7px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+
+.experience-year {
+  color: #0050ff;
+}
+
+.experience-detail {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.job-position {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.company-detail {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.job-detail {
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
