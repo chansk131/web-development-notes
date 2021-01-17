@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        color: red;
+      }
+
+      .blue {
+        color: blue;
+      }
+
+      #green {
+        color: green;
+      }
+
+      .warning p {
+        color: red;
+      }
+
+      h4,
+      h5 {
+        color: green;
+      }
+
+      section h4,
+      section h5 {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: purple">
+      This is a purple heading using inline-style technique
+    </h1>
+
+    <p>This is a red paragraph using element selector</p>
+
+    <p class="blue">This is a blue paragraph using class selector</p>
+
+    <p id="green">This is a green paragraph using id selector (rare)</p>
+
+    <h1>Descendant Selector</h1>
+    <article class="warning">
+      <p>All paragraphs in this article will have a color of red.</p>
+      <p>This paragraph too! No more classes needed!</p>
+    </article>
+
+    <h1>Grouping Selector</h1>
+    <h4>I'm Green</h4>
+    <h5>I'm Green Too!</h5>
+
+    <section>
+      <h4>I'm pink!!</h4>
+      <h5>I'm pink too</h5>
+    </section>
+    <h4>I'm NOT pink</h4>
+  </body>
+</html>

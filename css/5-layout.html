@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p.block-border {
+        border: 1px solid blue;
+      }
+      a.inline-border {
+        border: 1px solid red;
+      }
+
+      div.parent-flex {
+        border: 5px solid #7c8e88;
+        padding: 10px;
+      }
+      p.child-flex {
+        border: 5px solid #7c8e88;
+        padding: 10px;
+      }
+
+      div.parent-flex2 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        border: 5px solid #42352c;
+      }
+      p.child-flex2 {
+        border: 5px solid #c02d28;
+        background-color: #e7e6d2;
+      }
+
+      div.parent-flex3 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        border: 5px solid #42352c;
+      }
+      p.child-flex3 {
+        border: 5px solid #c02d28;
+        background-color: #e7e6d2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Block vs Inline</h1>
+    <p class="block-border">
+      This is a paragraph which is a display block with
+      <a class="inline-border" href="#">a link which is display inline</a>
+    </p>
+
+    <h1>Flex</h1>
+    <div class="parent-flex">
+      <p class="child-flex">
+        The paragraph is the child, or flex item, while the div is the parent,
+        or flex container.
+      </p>
+    </div>
+
+    <h3>Flex row</h3>
+    <div class="parent-flex2">
+      <p class="child-flex2">1</p>
+      <p class="child-flex2">2</p>
+      <p class="child-flex2">3</p>
+      <p class="child-flex2">4</p>
+      <p class="child-flex2">5</p>
+      <p class="child-flex2">6</p>
+    </div>
+
+    <h3>Flex Column</h3>
+    <div class="parent-flex3">
+      <p class="child-flex3">1</p>
+      <p class="child-flex3">2</p>
+      <p class="child-flex3">3</p>
+      <p class="child-flex3">4</p>
+      <p class="child-flex3">5</p>
+      <p class="child-flex3">6</p>
+    </div>
+  </body>
+</html>
