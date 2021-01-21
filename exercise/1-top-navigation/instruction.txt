@@ -1,0 +1,7 @@
+Create a horizontal top bar navigation including the following buttons
+- Home
+- Product
+- About
+- Contact
+
+Style them as you wish

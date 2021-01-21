@@ -1,0 +1,14 @@
+Colors used in this design
+- black: #000000
+- white: #ffffff
+- light grey: #d8d9db
+- buttons on hover: #ebebeb
+- function buttons: #df974c
+- function buttons on hover: #dfb07e
+
+Math symbols and arrows html code can be found in these links
+- https://www.toptal.com/designers/htmlarrows/math/
+- https://www.toptal.com/designers/htmlarrows/arrows/
+
+Max width of the calculator is 400px
+Height of each row is 100px
